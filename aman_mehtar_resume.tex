@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Based on Jake Gutierrez's template: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable / ATS parsable (pdfTeX only)
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aman Mehtar} \\ \vspace{2pt}
+    \small AI Engineer \& Full-Stack Developer \\ \vspace{3pt}
+    \small
+    Mumbai, India $|$ +91 98330 06363 $|$
+    \href{mailto:amanmstudies@gmail.com}{\underline{amanmstudies@gmail.com}} \\ \vspace{2pt}
+    \href{https://aman-on-bits.vercel.app}{\underline{aman-on-bits.vercel.app}} $|$
+    \href{https://github.com/amanmprojects}{\underline{github.com/amanmprojects}} $|$
+    \href{https://www.linkedin.com/in/aman-mehtar}{\underline{linkedin.com/in/aman-mehtar}} $|$
+    \href{https://x.com/Amanm10000}{\underline{x.com/Amanm10000}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+\small{AI \& Data Science engineering student who builds agents, developer tools, and full-stack products in public. Trains language models from scratch on consumer hardware, ships real-time applications, and self-hosts infrastructure end to end --- from pretraining and quantization to React frontends and Go services.}
+\vspace{-4pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Artificial Intelligence \& Data Science}{2023 -- 2027}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI / LLM Engineer Intern}{Jun 2024}
+      {contexIQ}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built an LLM-powered e-commerce semantic search system --- Llama on Groq for intent parsing, Weaviate for cosine vector retrieval --- a winning project of the internship.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Development Coordinator \& AIML Associate}{Aug 2024 -- Present}
+      {Microsoft Learn Student Club (MLSC), VCET}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Led a team of 4 in the Amazon ML Challenge 2024, coordinating end-to-end model development.}
+        \resumeItem{Designed and deployed an FAQ chatbot for the MLSC Coherence Hackathon site.}
+        \resumeItem{Coordinated MLSC hackathon operations and contributed to multiple industry initiatives.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Intern}{Jun 2021 -- Sep 2022}
+      {ScienceKidz Educare Ltd.}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Built obstacle-avoiding robots using IoT sensors and embedded systems (Robo-Doctor, Obstacle Avoiding Car).}
+        \resumeItem{Developed an Android logistics-manager app to optimize company orders and delivery.}
+        \resumeItem{Designed components with CorelDRAW and ran MDF \& acrylic laser-cutting operations.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+% BODY_PLACEHOLDER
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{LLM \& chessLLM} $|$ \emph{Python, PyTorch}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Pretrained a 101M-parameter LLM from scratch on an 8\,GB laptop GPU.}
+            \resumeItem{Built chessLLM, a 94M model that forms an internal board from move text alone --- linearly probeable to 85.6\% accuracy.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{jcow411 --- Agent-Orchestrated Firmware Repurposing} $|$ \emph{Claude Code, DeepSeek, Gemini, Antigravity}}{\href{https://aman-on-bits.vercel.app/writing/repurposing-jiofiber-wireless-repeater}{\underline{Writeup}}}
+          \resumeItemListStart
+            \resumeItem{Orchestrated two autonomous coding agents (DeepSeek V4.1 via Claude Code, Gemini 3.8 Flash via Antigravity) to root and repurpose a decommissioned gateway into a self-healing Wi-Fi repeater --- executed end-to-end by the agents.}
+            \resumeItem{Adjudicated a confident but wrong ``impossible'' verdict: the first agent misread a vendor error code, so cross-checking against a second model surfaced the true root cause and produced a working solution --- a multi-agent, human-in-the-loop workflow.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{amzn-ml-2025-pricing} $|$ \emph{Qwen, 4-bit LoRA, PyTorch}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Amazon ML Challenge 2025 price-prediction entry using 4-bit LoRA on Qwen with a monotone quantile head, trained on a single laptop GPU.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Phi-3.5-Vision Finetuning} $|$ \emph{Phi-3.5-Vision, PyTorch}}{\href{https://github.com/amanmprojects}{\underline{Kaggle}}}
+          \resumeItemListStart
+            \resumeItem{Amazon ML Challenge 2024: finetuned a VLM to extract product attributes (weight, quantity) from sticker images, with normalization rules reaching 95\% accuracy.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{quick-gateway} $|$ \emph{Docker, Python, LiteLLM, Vertex AI}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Docker proxy bridging Claude Code, VS Code, and OpenCode to Vertex AI models (GLM, Qwen, DeepSeek, Kimi) with token refresh, cost tracking, and request logging.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{ApexCore} $|$ \emph{React Native, TypeScript, llama.cpp}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Offline on-device Android AI running quantized SLMs (Llama, Phi, Qwen, Gemma) via llama.cpp, with Hugging Face model browsing, benchmarking (tokens/sec, latency, memory), and custom personas.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Sentira} $|$ \emph{Next.js, FastAPI, Gemini, PostgreSQL}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Full-stack platform using Gemini to analyze video, audio, and text via parallel LLM pipelines, with real-time sentiment tracking, bias detection, claim verification, and exportable PDF reports.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Image Generation Studio} $|$ \emph{Next.js, Vertex AI, WorkOS, AWS S3}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Prompt-based image generation on Vertex AI with WorkOS auth, S3 storage, drag-and-drop nested folders, multi-provider support, and cached presigned URLs.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{TrackMate --- Pet Tracking Collar} $|$ \emph{ESP32, LoRa, NEO-6M GPS}}{\href{https://github.com/amanmprojects}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Long-range, low-power pet tracker with firmware collecting GPS over LoRa to desktop/mobile clients as a reliable end-to-end system.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{ML / LLMs}{: From-scratch pretraining \& post-training, LoRA fine-tuning, quantization, evals, llama.cpp} \\
+     \textbf{Languages}{: Python, TypeScript, Go, C/C++, Bash} \\
+     \textbf{Full-Stack}{: React 19, Next.js, React Native (Expo), FastAPI, Convex, OAuth, PostgreSQL / Drizzle} \\
+     \textbf{Systems}{: WebSockets / SSE, low-latency APIs, Docker, self-hosting, native Linux tooling} \\
+     \textbf{Vision \& AI}{: YOLO, OpenCV, multimodal LLMs (Gemini, Phi-3.5-Vision), semantic / vector search}
+    }}
+ \end{itemize}
+
+%-----------VOLUNTEERING-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical Volunteer}{Aug 2024 -- Present}
+      {National Service Scheme (NSS), VCET}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Designed social-media creatives to grow NSS VCET's presence; joined community drives (beach clean-ups, Independence Day).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
